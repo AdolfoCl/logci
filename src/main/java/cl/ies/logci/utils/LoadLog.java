@@ -1,4 +1,4 @@
-package cl.ies.logci.utils;
+	package cl.ies.logci.utils;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -40,7 +40,7 @@ public class LoadLog {
 		    	try{
 		    		processFile.loadLine(line);
 		    	}catch(Exception e){
-		    		System.out.println(e);
+		    		System.out.println(e+" "+line );
 		    	}
 		    	
 		    }

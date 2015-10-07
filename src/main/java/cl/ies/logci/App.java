@@ -3,6 +3,7 @@ package cl.ies.logci;
 import cl.ies.logci.utils.LoadLog;
 import cl.ies.logci.utils.ProcessCH1;
 import cl.ies.logci.utils.ProcessCH2;
+import cl.ies.logci.utils.ProcessCH3;
 import cl.ies.logci.utils.ProcessCI;
 
 /**
@@ -45,7 +46,7 @@ public class App
 	        }else if("ch2".equalsIgnoreCase(tipo)){
 	        	loadLog.process(new ProcessCH2(), archivo);
 	        }else if("ch3".equalsIgnoreCase(tipo)){
-	        	loadLog.process(new ProcessCH2(), archivo);
+	        	loadLog.process(new ProcessCH3(), archivo);
 	        }
         }catch (Exception e){
         	System.out.println(e);

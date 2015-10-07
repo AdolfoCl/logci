@@ -13,7 +13,7 @@ public class ProcessCH2 implements ProcessFile {
 	
 	private static int maxLen = 0;
 	
-	@Override
+
 	public void loadLine(String line) throws ParseException {
 		String[] chuncks = line.split("\\s+");
 		if(chuncks.length < 8) return;
@@ -35,22 +35,22 @@ public class ProcessCH2 implements ProcessFile {
 		}
 	}
 
-	@Override
+
 	public Map<String, Base> getlBases() {
 		return lBases;
 	}
 
-	@Override
+
 	public void setlBases(Map<String, Base> lBases) {
 		ProcessCH2.lBases = lBases;
 	}
 
-	@Override
+
 	public int getMaxLen() {
 		return maxLen;
 	}
 
-	@Override
+
 	public void setMaxLen(int maxLen) {
 		ProcessCH2.maxLen = maxLen;
 	}
